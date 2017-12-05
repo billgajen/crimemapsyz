@@ -1,0 +1,422 @@
+/* 	--------------------------------------------------
+	CSS LESS
+	PROJECT : SYZYGY
+	BY : GAJEN
+	DATE : DECEMBER 2017
+	-------------------------------------------------- */
+/*	----------------------------------------------
+	CLEARFIX
+	-------------------------------------------------- */
+/* Nicolas Gallagher's micro clearfix */
+.row:before,
+.row:after,
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+.row,
+.clearfix {
+  zoom: 1;
+}
+/* http://sonspring.com/journal/clearing-floats */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+.clearfix:before,
+.clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+/* The following zoom:1 rule is specifically for IE6 + IE7.
+	Move to separate stylesheet if invalid CSS is a problem. */
+.clearfix {
+  zoom: 1;
+}
+/*	----------------------------------------------
+	VARIABLES
+	-------------------------------------------------- */
+/*	----------------------------------------------
+	LINKS
+	-------------------------------------------------- */
+a {
+  text-decoration: none;
+  line-height: inherit;
+  cursor: pointer;
+  color: #404040;
+}
+a,
+button,
+button span,
+a span,
+a strong,
+input,
+textarea,
+select,
+.button,
+.item,
+.item p.heading,
+.slick-prev,
+.slick-next {
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+a:hover {
+  text-decoration: none;
+  color: #404040;
+}
+a:focus {
+  outline: none;
+  text-decoration: none;
+  color: #404040;
+}
+a.see_all {
+  position: absolute;
+  top: 13px;
+  right: 0;
+  font-size: 11px;
+  font-size: 1.1rem;
+}
+/*	----------------------------------------------
+	LISTS
+	-------------------------------------------------- */
+ul,
+ol {
+  padding: 0;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+ul {
+  list-style: none;
+}
+ol {
+  padding-left: 20px;
+  list-style: decimal;
+}
+ul ul,
+ol ol {
+  padding: 0 0 0 15px;
+}
+ul ul {
+  list-style: none;
+}
+ol ol {
+  list-style: lower-roman;
+}
+ul.square {
+  list-style: square outside;
+}
+ul.circle {
+  list-style: circle outside;
+}
+ul.disc {
+  list-style: disc outside;
+}
+nav ul,
+nav li {
+  padding: 0;
+}
+dl dt {
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+dl dd {
+  padding-bottom: 2px;
+}
+/*	----------------------------------------------
+	MISC
+	-------------------------------------------------- */
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-upper {
+  text-transform: uppercase;
+}
+.hide {
+  display: none;
+}
+object,
+embed {
+  max-width: none;
+}
+img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+/*	----------------------------------------------
+	TYPOGRAPHY
+	-------------------------------------------------- */
+/*	----------------------------------------------
+		FONTFACE
+		-------------------------------------------------- */
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../fonts/OpenSans-Regular-webfont.eot');
+  src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Regular-webfont.svg#OpenSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/OpenSans-Bold-webfont.eot');
+  src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Bold-webfont.woff') format('woff'), url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Bold-webfont.svg#OpenSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url('../fonts/OpenSans-Semibold-webfont.eot');
+  src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'), url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Semibold-webfont.svg#OpenSans-Semibold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*	----------------------------------------------
+		TYPOGRAPHY
+		-------------------------------------------------- */
+html {
+  background: #FFFFFF;
+  font-size: 62.5%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: #FFFFFF;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  height: 100%;
+}
+/*	MIXINS --------------------------------------- */
+/* 	--------------------------------------------------
+    MIXINS
+	PROJECT : SYZYGY
+	BY : GAJEN
+	DATE : NOVEMBER 2017
+	-------------------------------------------------- */
+/* Effects and Gradients
+----------------------------------------------------------------*/
+/* Two tone color gradient */
+/* Border-radius */
+/* Transition all properties */
+/* box shadow */
+/* Layout
+----------------------------------------------------------------*/
+/* Flexbox
+----------------------------------------------------------------*/
+/* Bespoke
+----------------------------------------------------------------*/
+body {
+  width: 100%;
+  color: #000;
+}
+body,
+input,
+select,
+textarea,
+button {
+  font-size: 14px;
+  font-family: 'OpenSans', Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  line-height: 1.2;
+  font-family: 'OpenSans-Bold';
+  color: #404040;
+  margin: 0;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  font-weight: inherit;
+}
+p,
+div.text {
+  padding: 0 0 15 0;
+  line-height: 22px;
+}
+p img {
+  margin: 0;
+}
+em,
+i {
+  font-style: italic;
+  line-height: inherit;
+}
+strong,
+b {
+  font-weight: bold;
+  line-height: inherit;
+}
+small {
+  font-size: 80%;
+  line-height: inherit;
+}
+hr {
+  border: solid #000;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 20px auto;
+  height: 0;
+  width: 100%;
+}
+abbr,
+acronym {
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 1px solid #000;
+  cursor: help;
+}
+abbr {
+  text-transform: none;
+}
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #000;
+}
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #000;
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #000;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #000;
+}
+/* ----------------------------------------------
+	DEVICE WIDTH UPTO 640
+	-------------------------------------------------- */
+body {
+  background: #FFFFFF;
+  color: #404040;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: #f0f0f0;
+}
+h1 {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+h4 {
+  font-size: 12px;
+  line-height: 15px;
+  position: relative;
+  padding-left: 20px;
+}
+h4:before {
+  content: '\61';
+  position: absolute;
+  left: 0;
+  top: 1px;
+  font-family: 'dare';
+}
+h4 a {
+  color: #0653b6;
+}
+h4:before {
+  color: #0653b6;
+}
+.crime-map__location-search {
+  text-align: center;
+  padding: 15px 0;
+}
+.crime-map__location-search label {
+  font-size: 20px;
+  line-height: 26px;
+  padding-right: 15px;
+  font-family: 'OpenSans-Semibold';
+}
+.crime-map__location-search input[type="text"] {
+  width: 300px;
+  border: none;
+  padding: 10px;
+  height: 20px;
+  background: #FFFFFF;
+  font-size: 18px;
+  line-height: 22px;
+}
+#map {
+  width: 100%;
+  height: 600px;
+}
+/* ----------------------------------------------
+	DEVICE WIDTH FROM 641
+	-------------------------------------------------- */
+@media only screen and (min-width: 641px) {
+  h1 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+  h4 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+/* ----------------------------------------------
+	DEVICE WIDTH FROM 768
+	-------------------------------------------------- */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}
+/* ----------------------------------------------
+	DEVICE WIDTH FROM 992
+	-------------------------------------------------- */
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 34px;
+    line-height: 34px;
+  }
+}
+/* ----------------------------------------------
+	DEVICE WIDTH FROM 1224
+	-------------------------------------------------- */
+/* ----------------------------------------------
+	RETINA DISPLAY
+	-------------------------------------------------- */

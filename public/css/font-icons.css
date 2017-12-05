@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "dare";
+  src:url("../fonts/dare.eot");
+  src:url("../fonts/dare.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/dare.woff") format("woff"),
+    url("../fonts/dare.ttf") format("truetype"),
+    url("../fonts/dare.svg#dare") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "dare" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "dare" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-right:before {
+  content: "\61";
+}
