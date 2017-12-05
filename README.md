@@ -1,4 +1,5 @@
 # Syz Task
+UK Crime Map APP
 
 ## Tech stack
 1. NodeJS + ExpressJS
@@ -13,6 +14,9 @@
 2. Once node installed, go to the project location in your Command prompt or Terminal & enter *npm install* to insall all the dependencies.
 3. Once all node modules are successfully installed, type *node server.js* and enter. The CMD prompt/Terminal should log *App listening on port3000* on the next line.
 4. Now on your browser please go to your localhost in the port 3000 - http://localhost:3000/ where you will see all the list of street crimes on Google Map around Syzygy. Loader/Progress bar is applied during the JSON load.
+
+## Deployed to Heroku
+If you are unable to run the app locally, click on this link https://crimemapsyz.herokuapp.com/ to see the app which is deployed to Heroku.
 
 ## What's achieved
 Created an app plot street crimes from the UK police API on a Google Map
